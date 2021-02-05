@@ -1,6 +1,12 @@
 # Project
 make by sarawut nacwijit
 
+# Postman
+```
+$ https://www.getpostman.com/collections/d0c4504eae8cc35d93b8
+```
+
+
 # Clone
 ```
 $ git clone https://github.com/aofserver/flask_beginner.git
