@@ -2,9 +2,13 @@
 This Project make by Sarawut nacwijit
 
 Messaging API
+https://developers.line.biz/
 https://developers.line.biz/en/services/messaging-api/
 https://developers.line.biz/en/docs/messaging-api/overview/#what-you-can-do
 https://manager.line.biz/
+
+Line Bot Designer
+https://developers.line.biz/en/services/bot-designer/
 
 Ngrok
 https://ngrok.com/download
@@ -65,7 +69,7 @@ def profile(username):
 
 
 
-@app.route('/webhook', methods=['POST', 'GET'])
+@app.route('/webhook', methods=['POST'])
 def webhook():
     if request.method == 'POST':
         payload = request.json
@@ -92,6 +96,8 @@ def webhook():
                     bot.ReplyMessage(Reply_token,"test")
                 elif "ทดสอบ" == message:
                     bot.ReplyMessage(Reply_token,"ทดสอบ")
+                elif "สวัสดี" in message:
+                    bot.ReplyMessage(Reply_token,"สวัสดี")
                 elif "msg0" == message:
                     bot.ReplyMessage(Reply_token,"TEXT REPLY")
                 elif "msg1" == message:
@@ -106,8 +112,8 @@ def webhook():
                     bot.ReplyMessageCarousel(Reply_token)
                 elif "msg6" == message:
                     bot.ReplyMessageRichmenu(Reply_token)
-                else:
-                    bot.ReplyMessage(Reply_token,'Bot ยังไม่สามารถตอบกลับได้ในขณะนี้ ขอบคุณที่เข้ามาคุยกันน่ะครับ')
+                # else:
+                #     bot.ReplyMessage(Reply_token,'Bot ยังไม่สามารถตอบกลับได้ในขณะนี้ ขอบคุณที่เข้ามาคุยกันน่ะครับ')
 
             if type_message == 'image':
                 msg = 'ยังไม่สามารถรับรู้รูปภาพได้ในขณะนี้'

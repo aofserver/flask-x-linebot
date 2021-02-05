@@ -1,7 +1,7 @@
 import json
 import requests
 
-Channel_access_token = 'MEHHmo0chIX8ldVTNcHXeVw5XSjhlFY7jWcOCGf/w0aaWk3qfCKG3uGAfEBrFKNPp2vwgnxbni2tvWMr+hzRD7BMEx2fPlpHq5ouPfR6BDtltkcyuvkkh8ledsXWO6VTMhWD4X7nmuk4YDLF0PLGJwdB04t89/1O/w1cDnyilFU='
+Channel_access_token = 'Channel_access_token'
 
 def ReplyMessageTest(Reply_token,Message):
   LINE_API = 'https://api.line.me/v2/bot/message/reply'
