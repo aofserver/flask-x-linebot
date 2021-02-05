@@ -3,7 +3,7 @@ make by sarawut nacwijit
 
 # Postman
 ```
-$ https://www.getpostman.com/collections/d0c4504eae8cc35d93b8
+https://www.getpostman.com/collections/d0c4504eae8cc35d93b8
 ```
 
 
