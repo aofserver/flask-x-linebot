@@ -9,7 +9,7 @@ https://www.getpostman.com/collections/d0c4504eae8cc35d93b8
 
 # Clone
 ```
-$ git clone https://github.com/aofserver/flask_beginner.git
+$ git clone https://github.com/aofserver/flask-x-linebot.git
 ```
 
 # Virtualenv
